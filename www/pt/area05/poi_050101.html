@@ -1,0 +1,71 @@
+<html>
+
+<head>
+    <title>area050101</title>
+    <script>
+        var myVideo;
+        
+
+        window.onload = function () {
+            myVideo = document.getElementById("myVideoFile");
+//            myVideo.style.visibility = "hidden";
+            btnfullMode.addEventListener("click", setFullScreenMode, false);
+            btnGoBack.addEventListener("click", goBack, false);
+            
+//            video.addEventListener("loadedmetadata", makeFullModeVisible, false);
+//            myVideo.addEventListener("loadedmetadata", makeFullModeVisible, false);
+            
+        }
+
+        function makeFullModeVisible() {
+            if (myVideo.webkitSupportsFullscreen) {
+                document.getElementById("btnfullMode").style.visibility = "visible";
+/*                window.onresize = function (event) {
+                    makeVideoHidden();
+                }*/
+            }
+        }
+
+        function setFullScreenMode() {
+//            myVideo.webkitEnterFullscreen();
+            myVideo.webkitRequestFullscreen();
+            myVideo.style.visibility = "visible";
+            myVideo.play();
+            myVideo.style.transition = "all 2s";
+//            video_container.addEventListener("resize", makeVideoHidden, false);
+        }
+        
+        function makeVideoHidden() {
+            myVideo.style.visibility = "hidden";
+            myVideo.pause();
+        }
+        
+/*        myVideo.onresize = function() {
+            myVideo.style.visibility = "hidden";
+        }*/
+        
+//        addResizeListener(myVideoFile, makeVideoHidden);
+
+    function goBack() {
+    window.history.back();
+}
+        
+    </script>
+</head>
+
+<body>
+<!--   <img src="../../img/area03/area030201wm01.jpg" id="btnfullMode">-->
+    <div id="video_container">
+<!--        <video width="0%" height="auto" src="http://192.168.30.250/baco/area05/area050101v1280.mp4" id="myVideoFile" controls autoplay />-->
+        <video width="80%" height="auto" src="videos/vid1280_area050101.mp4" id="myVideoFile" controls autoplay />
+<!--        <video width="320" height="176" src="http://192.168.30.250/baco/area05/v_area050101.mp4"  id="myVideoFile" />-->
+
+    </div>
+    <br/>
+    <button type="button" id="btnfullMode">
+        Full Screen
+    </button>
+    <button type="button" id = "btnGoBack">Go Back</button>
+</body>
+
+</html>

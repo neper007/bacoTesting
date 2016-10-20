@@ -1,0 +1,177 @@
+@import url("_base.css");
+
+/* Landscape layout (with min-width) */
+@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
+    .app {
+        height:100%;                   /* text area height */
+        width:100%;                   /* text area width */
+        /*    text-align:center;*/
+        /*background-position:left center;*/
+        /*padding:2% 2% 2% 2%;   /*padding-top + padding-bottom + text area = image height 
+        /*margin:-1% 0 0 0;   offset vertical: half of image height */
+        /* offset horizontal: half of image width and text area width */
+    }
+
+    html,
+    body {
+        /*        height: 100%;*/
+/*                box-sizing: content-box;*/
+/*                box-sizing: border-box;*/
+    }
+
+    #mm_main {
+/*        border: 2px solid tomato;*/
+        height: inherit;
+        width: inherit;
+/*        height:100%;*/
+/*        width:100%;*/
+        display: flex;
+/*        flex-wrap: wrap;*/
+        justify-content: center;
+        align-items: center;
+    }
+
+    #mm_map {
+        border: 2px solid tomato;
+        width: 40%;
+/*        margin: auto;*/
+        background-color: aquamarine;
+
+    }
+
+    #mm_map_inside {
+        box-sizing: border-box;
+        border: 2px solid tomato;
+        background-color: antiquewhite;
+        
+        width: 100%;
+        height: 100%;
+        padding-left: 1%;
+        padding-right: 1%;
+        
+/*        text-align: center;*/
+/*        justify-content: inherit;*/
+        /*        margin: 0 10%;*/
+    }
+
+    #mm_map_inside > img {
+    }
+
+    #mm_map_img {
+
+    }
+
+    svg#mm_map_img {
+/*        border: 2px solid tomato;*/
+        
+        max-width: 100% !important;
+        max-height: auto;
+        padding: 1% !important;
+        border: .2vw dashed darkred;
+        
+        
+/*        margin: 1%;*/
+/*        margin-right: -1%;*/
+/*        width: 100%;*/
+/*        height: auto;*/
+/*        width: auto;
+        height: 100%;*/
+
+    }
+
+    #mm_nav {
+        
+        border: 2px solid tomato;
+/*        justify-content: center;
+        align-items: center;*/
+        width: 60%;
+        /*        position: absolute;*/
+
+        
+    }
+
+    #mm_nav_header {
+/*        border: 2px solid tomato;*/
+/*        background-color: burlywood;*/
+/*        position: fixed;*/
+/*        width: 60%;*/
+/*        height: 10%;*/
+/*        top: 0;*/
+/*        left: 40%;*/
+/*        font-size: 2vw;*/
+/*        text-align: center;*/
+
+    }
+
+    #mm_nav_points {
+/*        border: 2px solid tomato;*/
+/*        background-color: burlywood;*/
+        /*        background-color: white;*/
+/*        position: fixed;*/
+/*        top:10%;*/
+/*        width: 60%;*/
+/*        height: 80%;*/
+/*        overflow: auto;*/
+/*        padding: 0 5%;*/
+/*        font-size: 1.3vw;*/
+        
+    }
+    
+/*    #mm_nav_points > .point { */
+    image.point {
+/*         border: 2px solid tomato;*/
+/*        border: 1px solid #ccc;*/
+/*        float: left;*/
+/*        width: 500px;*/
+/*        display: inline-block;*/
+        
+
+    }
+    
+    #mm_nav_points .point:hover {
+/*        border: 1px solid #777;*/
+    }
+    
+/*    #mm_nav_points img { */
+/*    section.point > img { 
+        width: 20%;
+        height: auto;
+    }*/
+    
+    #mm_nav_point_img {
+/*        border: 2px solid tomato;*/
+/*        width: 20%;*/
+/*        height: auto;*/
+    }
+
+/*    #mm_nav_points .desc {*/
+    
+    .desc {
+/*        border: 2px solid tomato;*/
+        
+/*        padding: 3vw;*/
+/*        padding: 5%;*/
+/*        text-align: center;*/
+       
+    }
+    
+    
+
+    #mm_nav_buttons {
+/*        border: 2px solid tomato;*/
+/*        font-size: 2vw;*/
+/*        text-align: center;*/
+/*        background-color: burlywood;*/
+/*        background-color: cadetblue;*/
+/*        align-items: center;*/
+/*        border: 2px solid tomato;*/
+/*        position: fixed;*/
+/*        width: 60%;*/
+/*        bottom: 0;*/
+        /*        left: 40%;*/
+/*        height: 10%;*/
+        
+    }
+    
+
+}
